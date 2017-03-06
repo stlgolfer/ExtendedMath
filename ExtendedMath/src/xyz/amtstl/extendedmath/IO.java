@@ -1,8 +1,8 @@
 package xyz.amtstl.extendedmath;
 
 public class IO {
-	public static void println(String value) {
-		System.out.println(value);
+	public static void println(String f) {
+		System.out.println(f);
 	}
 	
 	public static void printInt(int i) {
