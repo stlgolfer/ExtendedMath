@@ -1,4 +1,4 @@
-package xyz.amtstl.extendedmath;
+package xyz.amtstl.javatools.misc;
 
 public class IO {
 	public static void println(String f) {

@@ -14,6 +14,6 @@ import xyz.amtstl.extendedmath.shapes.Triangle;
 public class Example {
 	
 	public static void main(String args[]) {
-		IO.println(Iterators.iterateBoolArray(new boolean[] {true, false, true}));
+		//IO.println(Iterators.iterateBoolArray(new boolean[] {true, false, true}));
 	}
 }
