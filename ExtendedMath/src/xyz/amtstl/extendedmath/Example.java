@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import xyz.amtstl.javatools.misc.IO;
 import xyz.amtstl.javatools.misc.ListSearcher;
+import xyz.amtstl.javatools.misc.NoSearchesFound;
 
 public class Example {
 	
@@ -19,7 +20,12 @@ public class Example {
 		
 		IO.println("Enter regex for searching...");
 		
-		IO.println(ListSearcher.searchArray(test, s.nextLine()).getTerm());
+		try {
+			IO.println(ListSearcher.searchArray(test, s.nextLine()).getTerm());
+		} catch (NoSearchesFound e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		s.close();
 	}

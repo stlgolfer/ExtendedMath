@@ -15,8 +15,9 @@ public class ListSearcher {
 	 * @param inputArray the array to be searched
 	 * @param regex the regex that needs to found in the array
 	 * @return the best choice from the regex
+	 * @throws NoSearchesFound 
 	 */
-	public static SearchResult searchArray(List<String> inputArray, String regex) {
+	public static SearchResult searchArray(List<String> inputArray, String regex) throws NoSearchesFound {
 		List<SearchResult> matches = new ArrayList<SearchResult>();
 		
 		for (int i = 0; i < inputArray.size(); i++) {
@@ -41,6 +42,6 @@ public class ListSearcher {
 			}
 		}
 		
-		return null;
+		throw new NoSearchesFound(regex);
 	}
 }
