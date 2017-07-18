@@ -1,19 +1,26 @@
 package xyz.amtstl.extendedmath;
 
-import xyz.amtstl.extendedmath.functions.BasicFunctions;
-import xyz.amtstl.extendedmath.functions.Iterators;
-import xyz.amtstl.extendedmath.functions.Volume;
-import xyz.amtstl.extendedmath.shapes.Circle;
-import xyz.amtstl.extendedmath.shapes.FlatShape;
-import xyz.amtstl.extendedmath.shapes.RightTriangle;
-import xyz.amtstl.extendedmath.shapes.ThreeDimShape;
-import xyz.amtstl.extendedmath.shapes.Trapezoid;
-import xyz.amtstl.extendedmath.shapes.Triangle;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-@SuppressWarnings("unused")
+import xyz.amtstl.javatools.misc.IO;
+import xyz.amtstl.javatools.misc.ListSearcher;
+
 public class Example {
 	
 	public static void main(String args[]) {
-		//IO.println(Iterators.iterateBoolArray(new boolean[] {true, false, true}));
+		List<String> test = new ArrayList<String>();
+		
+		Scanner s = new Scanner(System.in);
+		for (int i = 1; i <= 5; i++) {
+			test.add(s.nextLine());
+		}
+		
+		IO.println("Enter regex for searching...");
+		
+		IO.println(ListSearcher.searchArray(test, s.nextLine()).getTerm());
+		
+		s.close();
 	}
 }
