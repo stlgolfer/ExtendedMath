@@ -2,11 +2,8 @@ package xyz.amtstl.extendedmath.http;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.sun.net.httpserver.*;
 
-import xyz.amtstl.javatools.misc.ListSearcher;
-import xyz.amtstl.javatools.misc.NoSearchesFound;
-import xyz.amtstl.javatools.misc.SearchResult;
+import com.sun.net.httpserver.HttpExchange;
 
 public class ParameterParser {
 	private String query = "";
