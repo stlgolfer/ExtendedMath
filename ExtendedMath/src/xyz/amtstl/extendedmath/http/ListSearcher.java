@@ -1,4 +1,4 @@
-package xyz.amtstl.javatools.misc;
+package xyz.amtstl.extendedmath.http;
 
 import java.util.ArrayList;
 import java.util.List;

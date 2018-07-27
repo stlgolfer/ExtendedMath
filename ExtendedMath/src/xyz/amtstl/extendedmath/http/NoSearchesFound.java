@@ -1,4 +1,4 @@
-package xyz.amtstl.javatools.misc;
+package xyz.amtstl.extendedmath.http;
 
 public class NoSearchesFound extends Exception {
 	private static final long serialVersionUID = 1L;

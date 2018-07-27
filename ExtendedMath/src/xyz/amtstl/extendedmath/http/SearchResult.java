@@ -1,4 +1,4 @@
-package xyz.amtstl.javatools.misc;
+package xyz.amtstl.extendedmath.http;
 
 /**
  * SearchResult data type

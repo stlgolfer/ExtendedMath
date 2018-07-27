@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import xyz.amtstl.extendedmath.http.ListSearcher;
+import xyz.amtstl.extendedmath.http.NoSearchesFound;
 import xyz.amtstl.javatools.misc.IO;
-import xyz.amtstl.javatools.misc.ListSearcher;
-import xyz.amtstl.javatools.misc.NoSearchesFound;
 
 public class Example {
 	
